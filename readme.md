@@ -38,7 +38,7 @@ DB_USERNAME=your_username
 DB_PASSWORD=your_password
 DB_NAME=your_dbname
 
-🧪 Development Commands
+## 🧪 Development Commands
 Start in development mode:
 npm run dev
 
