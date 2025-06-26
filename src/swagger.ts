@@ -6,9 +6,14 @@ const doc = {
     description: "API para gestión de clientes",
   },
   host: "localhost:3000",
-  schemes: ["http"],
+  schemes: ["https"],
   consumes: ["application/json"],
   produces: ["application/json"],
+  servers: [
+    {
+      url: "https://clientmanagementapi-production.up.railway.app/api/v1",
+    },
+  ],
   securityDefinitions: {
     bearerAuth: {
       type: "apiKey",
