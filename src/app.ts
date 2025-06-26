@@ -14,10 +14,20 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
 
-app.use("/api/v1/docs", swaggerUi.serve, swaggerUi.setup(swaggerjson));
+app.use(
+  "/api/v1/docs",
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerjson, {
+    swaggerOptions: {
+      urls: [
+        {
+          url: "https://clientmanagementapi-production.up.railway.app/api/v1/swagger.json",
+          name: "Water API",
+        },
+      ],
+    },
+  })
+);
 app.use("/api/v1/auth", routerAuth);
 app.use("/api/v1", authMiddleware, routerClient);
 export default app;
-
-
-
