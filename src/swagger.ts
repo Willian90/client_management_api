@@ -5,7 +5,6 @@ const doc = {
     title: "Client API",
     description: "API para gestión de clientes",
   },
-  host: "localhost:3000",
   schemes: ["https"],
   consumes: ["application/json"],
   produces: ["application/json"],
