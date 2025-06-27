@@ -5,16 +5,13 @@
     "description": "API para gestión de clientes",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
   "servers": [
     {
-      "url": "https://clientmanagementapi-production.up.railway.app/api/v1"
+      "url": "https://clientmanagementapi-production.up.railway.app"
     }
   ],
   "basePath": "/",
-  "schemes": [
-    "https"
-  ],
+  "schemes": ["https"],
   "securityDefinitions": {
     "bearerAuth": {
       "type": "apiKey",
@@ -25,18 +22,12 @@
       "description": "Introduce el token con formato: Bearer <token>"
     }
   },
-  "consumes": [
-    "application/json"
-  ],
-  "produces": [
-    "application/json"
-  ],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
   "paths": {
     "/api/v1/auth/register": {
       "post": {
-        "tags": [
-          "Auth"
-        ],
+        "tags": ["Auth"],
         "description": "",
         "parameters": [
           {
@@ -74,9 +65,7 @@
     },
     "/api/v1/auth/login": {
       "post": {
-        "tags": [
-          "Auth"
-        ],
+        "tags": ["Auth"],
         "description": "",
         "parameters": [
           {

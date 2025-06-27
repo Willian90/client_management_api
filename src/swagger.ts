@@ -10,7 +10,7 @@ const doc = {
   produces: ["application/json"],
   servers: [
     {
-      url: "https://clientmanagementapi-production.up.railway.app/api/v1",
+      url: "https://clientmanagementapi-production.up.railway.app",
     },
   ],
   securityDefinitions: {
